@@ -11,6 +11,12 @@
     <div>
         <a id="timeTogether"></a>
     </div>
+    <div>
+        <a id="timeTillYear"></a>
+    </div>
+    <div>
+        <a id="timeTillMonth"></a>
+    </div>
 </body>
 </html>
 
@@ -27,7 +33,8 @@
 
         var anniversary = new Date(2017, 11, 1);
 
-        var diff_date = Date.now() - anniversary;
+        var today = Date.now();
+        var diff_date = today - anniversary;
 
         var num_years = diff_date/31536000000;
         var num_months = (diff_date % 31536000000)/2628000000;
@@ -36,7 +43,21 @@
         // set the content of the element with the ID time to the formatted string
         document.getElementById('date').innerHTML = "Todays Date is: " + date;
         document.getElementById('timeTogether').innerHTML = "That means that Benji and Harnee have been together for "
-            + Math.floor(num_years) + " years, " + Math.floor(num_months) + " months and " + Math.floor(num_days);
+            + Math.floor(num_years) + " years, " + Math.floor(num_months) + " months and " + Math.floor(num_days) + " days.";
+
+        var timeTillYear = document.getElementById('timeTillYear');
+        timeTillYear.innerHTML = "So it's ";
+        if((12 - Math.floor(num_months)) > 0) {
+            var text = 12 - Math.floor(num_months) + " months until ";
+            timeTillYear.innerHTML += text;
+        }
+
+        var nextAnniversary = anniversary;
+        nextAnniversary.setFullYear(anniversary.getFullYear() + num_years);
+
+        // if() {
+        //
+        // }
 
         // call this function again in 1000ms
         setTimeout(updateDates, 1000);
