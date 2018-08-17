@@ -33,10 +33,7 @@
         var num_years = diff_date/31536000000;
         var num_months = (diff_date % 31536000000)/2628000000;
         var num_days = ((diff_date % 31536000000) % 2628000000)/86400000;
-
-
-        console.log(dateDiff);
-        console.log(dateDiff.getMonth());
+        
         // set the content of the element with the ID time to the formatted string
         document.getElementById('date').innerHTML = "Todays Date is: " + date;
         document.getElementById('timeTogether').innerHTML = "That means that Benji and Harnee have been together for "
