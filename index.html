@@ -70,6 +70,9 @@
         var numMonthsToNext = (diffToNext % 31536000000)/2628000000;
         var numDaysToNext = ((diffToNext % 31536000000) % 2628000000)/86400000;
 
+        console.log(numMonthsToNext);
+        console.log(numDaysToNext);
+
         timeTillYear.innerHTML = "So it's ";
         if(Math.floor(numMonthsToNext) > 0) {
             var text = Math.floor(numMonthsToNext) + " months ";
