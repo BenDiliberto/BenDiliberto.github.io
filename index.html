@@ -62,14 +62,23 @@
         console.log(numMonthsToNext + "months, " + numDaysToNext + " days");
 
         timeTillYear.innerHTML = "So it's ";
-        if((12 - Math.floor(num_months)) > 0) {
-            var text = (12 - Math.floor(num_months) - 1) + " months until ";
+        if(Math.floor(numMonthsToNext) > 0) {
+            var text = Math.floor(numMonthsToNext) + " months ";
             timeTillYear.innerHTML += text;
         }
 
-        // if() {
-        //
-        // }
+        if(Math.floor(numDaysToNext) > 0) {
+            var text = Math.floor(numDaysToNext) + " days ";
+            timeTillYear.innerHTML += text;
+        }
+
+        if(nextAnniversary.setHours(0,0,0,0) == today.setHours(0,0,0,0)) {
+            var text = "your anniversary!!!!"
+            timeTillYear.innerHTML += text;
+        } else {
+            var text = "until your anniversary!"
+            timeTillYear.innerHTML += text;
+        }
 
         // call this function again in 1000ms
         setTimeout(updateDates, 1000);
