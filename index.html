@@ -25,9 +25,14 @@
                 months[now.getMonth()],
                 now.getFullYear()].join(' ');
 
-        var anniversary = new Date(2017, 8, 1);
+        var anniversary = new Date(2017, 7, 1);
 
-        var dateDiff = new Date(now.getTime() - anniversary.getTime());
+        var today_date = new Date();
+        var diff_date =  anniversary - today_date;
+
+        var num_years = diff_date/31536000000;
+        var num_months = (diff_date % 31536000000)/2628000000;
+        var num_days = ((diff_date % 31536000000) % 2628000000)/86400000;
 
 
         console.log(dateDiff);
@@ -35,7 +40,7 @@
         // set the content of the element with the ID time to the formatted string
         document.getElementById('date').innerHTML = "Todays Date is: " + date;
         document.getElementById('timeTogether').innerHTML = "That means that Benji and Harnee have been together for "
-            + (dateDiff.getUTCFullYear() - 1970) + " years, " + (dateDiff.getUTCMonth() + 1) + " months and " + (dateDiff.getUTCDate() - 1) ;
+            + Math.floor(num_years) + " years, " + Math.floor(num_months) + " months and " + Math.floor(num_days);
 
         // call this function again in 1000ms
         setTimeout(updateDates, 1000);
