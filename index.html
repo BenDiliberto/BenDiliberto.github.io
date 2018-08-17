@@ -46,14 +46,21 @@
             + Math.floor(num_years) + " years, " + Math.floor(num_months) + " months and " + Math.floor(num_days) + " days.";
 
         var timeTillYear = document.getElementById('timeTillYear');
-        timeTillYear.innerHTML = "So it's ";
-        if((12 - Math.floor(num_months)) > 0) {
-            var text = 12 - Math.floor(num_months) + " months until ";
-            timeTillYear.innerHTML += text;
-        }
 
         var nextAnniversary = anniversary;
         nextAnniversary.setFullYear(anniversary.getFullYear() + num_years);
+
+        var diffToNext = nextAnniversary - today;
+
+        var numMonthsToNext = (diff_date % 31536000000)/2628000000;
+        var numDaysToNext = ((diff_date % 31536000000) % 2628000000)/86400000;
+        console.log(numMonthsToNext + "months, " + numDaysToNext + " days");
+
+        timeTillYear.innerHTML = "So it's ";
+        if((12 - Math.floor(num_months)) > 0) {
+            var text = (12 - Math.floor(num_months) - 1) + " months until ";
+            timeTillYear.innerHTML += text;
+        }
 
         // if() {
         //
