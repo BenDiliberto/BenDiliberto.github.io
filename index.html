@@ -72,7 +72,7 @@
             timeTillYear.innerHTML += text;
         }
 
-        if(nextAnniversary.setHours(0,0,0,0) == today.setHours(0,0,0,0)) {
+        if(nextAnniversary.toDateString() == today.toDateString()) {
             var text = "your anniversary!!!!"
             timeTillYear.innerHTML += text;
         } else {
