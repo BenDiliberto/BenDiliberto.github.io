@@ -5,8 +5,12 @@
     <title>Sup</title>
 </head>
 <body>
-    <a id="date"></a>
-    <a id="timeTogether"></a>
+    <div>
+        <a id="date"></a>
+    </div>
+    <div>
+        <a id="timeTogether"></a>
+    </div>
 </body>
 </html>
 
@@ -23,12 +27,12 @@
 
         var anniversary = new Date(2017, 12, 1);
 
-        var dateDiff = now.getDate() - anniversary;
+        var dateDiff = new Date(anniversary.getTime() - now.getTime());
 
         // set the content of the element with the ID time to the formatted string
         document.getElementById('date').innerHTML = "Todays Date is: " + date;
         document.getElementById('timeTogether').innerHTML = "That means that Benji and Harnee have been together for "
-            + dateDiff;
+            + (dateDiff.getUTCFullYear() - 1970) + " years, " + dateDiff.getUTCMonth() + " months and " + (dateDiff.getUTCDate() - 1) ;
 
         // call this function again in 1000ms
         setTimeout(updateClock, 1000);
