@@ -48,12 +48,16 @@
         var timeTillYear = document.getElementById('timeTillYear');
 
         var nextAnniversary = anniversary;
-        nextAnniversary.setFullYear(anniversary.getFullYear() + num_years);
+        if(num_years > 0){
+            nextAnniversary.setFullYear(anniversary.getFullYear() + num_years);
+        } else {
+            nextAnniversary.setFullYear(anniversary.getFullYear() + 1);
+        }
 
         var diffToNext = nextAnniversary - today;
 
-        var numMonthsToNext = (diff_date % 31536000000)/2628000000;
-        var numDaysToNext = ((diff_date % 31536000000) % 2628000000)/86400000;
+        var numMonthsToNext = (diffToNext % 31536000000)/2628000000;
+        var numDaysToNext = ((diffToNext % 31536000000) % 2628000000)/86400000;
         console.log(numMonthsToNext + "months, " + numDaysToNext + " days");
 
         timeTillYear.innerHTML = "So it's ";
