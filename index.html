@@ -27,7 +27,7 @@
 
         var anniversary = new Date(2017, 12, 1);
 
-        var dateDiff = new Date(anniversary.getTime() - now.getTime());
+        var dateDiff = new Date(now.getTime() - anniversary.getTime());
 
         // set the content of the element with the ID time to the formatted string
         document.getElementById('date').innerHTML = "Todays Date is: " + date;
