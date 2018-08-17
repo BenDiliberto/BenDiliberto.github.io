@@ -48,11 +48,10 @@
         var timeTillYear = document.getElementById('timeTillYear');
 
         var nextAnniversary = anniversary;
-        if(num_years > 0){
+        if(Math.floor(num_years) > 0){
             nextAnniversary.setFullYear(anniversary.getFullYear() + num_years);
         } else {
             nextAnniversary.setFullYear(anniversary.getFullYear() + 1);
-            console.log("Did this");
         }
 
         var diffToNext = nextAnniversary - today;
