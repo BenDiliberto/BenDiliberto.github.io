@@ -58,6 +58,7 @@
 
         var numMonthsToNext = (diffToNext % 31536000000)/2628000000;
         var numDaysToNext = ((diffToNext % 31536000000) % 2628000000)/86400000;
+        console.log(nextAnniversary.getFullYear());
         console.log(numMonthsToNext + "months, " + numDaysToNext + " days");
 
         timeTillYear.innerHTML = "So it's ";
