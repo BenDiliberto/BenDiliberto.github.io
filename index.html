@@ -10,10 +10,11 @@
 </html>
 
 <script>
-    function updateClock() {
+    function updateDates() {
         var now = new Date(), // current date
-            months = ['January', 'February', '...']; // you get the idea
-        time = now.getHours() + ':' + now.getMinutes(), // again, you get the idea
+            months = ['January', 'February', 'March', 'April', 'May', 'June', 'July',
+                'August', 'September', 'October', 'November', 'December']; // you get the idea
+        time = now.getHours() + ':' + now.getMinutes(); // again, you get the idea
 
             // a cleaner way than string concatenation
             date = [now.getDate(),
@@ -26,5 +27,5 @@
         // call this function again in 1000ms
         setTimeout(updateClock, 1000);
     }
-    updateClock(); // initial call
+    updateDates(); // initial call
 </script>
