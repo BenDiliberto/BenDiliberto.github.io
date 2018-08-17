@@ -44,8 +44,15 @@
 
         // set the content of the element with the ID time to the formatted string
         document.getElementById('date').innerHTML = "Todays Date is: " + date;
-        document.getElementById('timeTogether').innerHTML = "That means that Benji and Harnee have been together for "
-            + Math.floor(num_years) + " years, " + Math.floor(num_months) + " months and " + Math.floor(num_days) + " days.";
+
+        var timeTogether = document.getElementById('timeTogether');
+        timeTogether.innerHTML = "That means that Benji and Harnee have been together for ";
+        if(Math.floor(num_years) > 0) {
+            timeTogether.innerHTML += Math.floor(num_years) + " years, ";
+        }
+        timeTogether.innerHTML +=
+              Math.floor(num_months) + " months and "
+            + Math.floor(num_days) + " days.";
 
         var timeTillYear = document.getElementById('timeTillYear');
 
