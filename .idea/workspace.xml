@@ -81,12 +81,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="1023" />
+          <entry key="html" value="1030" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="1023" />
+          <entry key="HTML" value="1030" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -107,8 +107,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="47" column="49" selection-start-line="47" selection-start-column="49" selection-end-line="47" selection-end-column="49" />
+            <state relative-caret-position="266">
+              <caret line="70" column="140" selection-start-line="70" selection-start-column="140" selection-end-line="70" selection-end-column="140" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#2;n#center#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -234,7 +234,7 @@
       <workItem from="1534866476602" duration="8000" />
       <workItem from="1537369858493" duration="1939000" />
       <workItem from="1537534602318" duration="3626000" />
-      <workItem from="1537555310552" duration="5425000" />
+      <workItem from="1537555310552" duration="5511000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1534499931471</created>
@@ -520,7 +520,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18082000" />
+    <option name="totallyTimeSpent" value="18168000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="709" extended-state="6" />
@@ -604,8 +604,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="47" column="49" selection-start-line="47" selection-start-column="49" selection-end-line="47" selection-end-column="49" />
+        <state relative-caret-position="266">
+          <caret line="70" column="140" selection-start-line="70" selection-start-column="140" selection-end-line="70" selection-end-column="140" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#2;n#center#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
