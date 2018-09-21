@@ -91,6 +91,10 @@
         var username = "username";
         var password = "password";
         if ((un.value == username) && (pw.value == password)) {
+            var sessionTimeout = 1; //hours
+            var loginDuration = new Date();
+            loginDuration.setTime(loginDuration.getTime()+(sessionTimeout*60*60*1000));
+            document.cookie = "CrewCentreSession=Valid; "+loginDuration.toGMTString()+"; path=/";
             return true;
         }
         else {

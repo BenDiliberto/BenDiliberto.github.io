@@ -11,6 +11,11 @@
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
+<script>
+    if (document.cookie.indexOf("CrewCentreSession=Valid") == -1) {
+        location.href = "/login.html";
+    }
+</script>
   <div class="navbar-fixed">
     <nav class="blue-grey lighten-3" role="navigation" id="nav">
       <div class="nav-wrapper container">
