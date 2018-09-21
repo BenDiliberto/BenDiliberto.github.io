@@ -163,11 +163,29 @@
     </div>
   </footer>
 
+  <div class="fixed-action-btn">
+    <a class="btn-floating btn-large blue">
+      <i class="large material-icons">link</i>
+    </a>
+    <ul>
+      <li><a class="btn-floating red tooltipped" data-position="left" data-tooltip="Send Email"><i class="material-icons">email</i></a></li>
+      <li><a class="btn-floating yellow darken-1 tooltipped" data-position="left" data-tooltip="View LinkedIn profile"><img src="linkedin.jpg" class="responsive-img"></a></li>
+    </ul>
+  </div>
+
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
+  <script>
+      $(document).ready(function(){
+          $('.fixed-action-btn').floatingActionButton();
+          $('.tooltipped').tooltip();
+      });
+
+
+  </script>
 
   </body>
 </html>
