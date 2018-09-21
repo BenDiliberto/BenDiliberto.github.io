@@ -11,19 +11,22 @@
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
-  <nav class="white" role="navigation">
-    <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo">Logo</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
+  <div class="navbar-fixed">
+    <nav class="blue-grey lighten-3" role="navigation" id="nav">
+      <div class="nav-wrapper container">
+        <a id="logo-container" href="#" class="brand-logo">Logo</a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#experience" data-scroll>Experience</a></li>
+          <li><a href="#education" data-scroll>Education</a></li>
+        </ul>
 
-      <ul id="nav-mobile" class="sidenav">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
-      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-    </div>
-  </nav>
+        <ul id="nav-mobile" class="sidenav">
+          <li><a href="#">Navbar Link</a></li>
+        </ul>
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      </div>
+    </nav>
+  </div>
 
   <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
@@ -32,7 +35,7 @@
         <div class="row center">
           <img src="0.jpeg" class="z-depth-4">
         </div>
-        <h1 class="header center blue-text text-lighten-2">My name is Ben Diliberto...</h1>
+        <h1 class="header center black-text text-lighten-2">My name is Ben Diliberto...</h1>
         <div class="row center">
           <h5 class="header col s12 blue-text text-darken-4">...and welcome to my Cirriculum Vitae.</h5>
         </div>
@@ -44,7 +47,7 @@
   </div>
 
 
-  <div class="container">
+  <div class="container" id="experience">
     <div class="section">
 
       <h2 class="center">Experience</h2>
@@ -57,7 +60,7 @@
       <div class="row">
         <div class="col s12 m4">
           <div class="icon-block center">
-            <img src="THG-logo.jpg" class="card-image responsive-img">
+            <a class="modal-trigger" href="#ThgModal"><img src="THG-logo.jpg" class="card-image responsive-img"></a>
             <h5 class="center">Graduate Software Engineer</h5>
             <h6 class="center light">Aug 2018 - Present</h6>
 
@@ -67,7 +70,7 @@
 
         <div class="col s12 m4">
           <div class="icon-block center">
-            <img src="TBA-logo.jpg" class="card-image responsive-img">
+            <a class="modal-trigger" href="#TbaModal"><img src="TBA-logo.jpg" class="card-image responsive-img"></a>
             <h5 class="center">Software Engineer</h5>
             <h6 class="center light">Aug 2016 - Sept 2017</h6>
 
@@ -77,7 +80,7 @@
 
         <div class="col s12 m4">
           <div class="icon-block center">
-            <img src="asda-logo.jpg" class="card-image responsive-img">
+            <a class="modal-trigger" href="#AsdaModal"><img src="asda-logo.jpg" class="card-image responsive-img"></a>
             <h5 class="center">Warehouse Operative</h5>
             <h6 class="center light">Aug 2013 - Aug 2014</h6>
 
@@ -91,24 +94,66 @@
 
 
   <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-        </div>
-      </div>
-    </div>
+    <div class="section no-pad-bot"></div>
     <div class="parallax"><img src="background2.jpg" alt="Unsplashed background img 2"></div>
   </div>
 
-  <div class="container">
+  <div class="container" id="education">
     <div class="section">
+
+      <h2 class="center">Education</h2>
+
+      <div class="divider"></div>
+
+      <br/>
 
       <div class="row">
         <div class="col s12 center">
-          <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>Contact Us</h4>
-          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+          <div class="col s3 center">
+            <img src="lboro.jpg" class="card-image responsive-img center">
+          </div>
+          <div class="col s9 center">
+            <div class="row center">
+              <h5>Loughborough University</h5>
+            </div>
+            <div class="row center">
+              <h6>Computer Science BSc</h6>
+              <h6>Achieved - Second Class Upper Division (2:1)</h6>
+            </div>
+            <div class="row center">
+              <h6>Modules include:</h6>
+              <table class="responsive-table centered">
+                <tr><td>Object Oriented Programming</td><td>Mobile Application Development</td></tr>
+                <tr><td>Requirements Engineering</td><td>Team Projects</td></tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <br/>
+
+      <div class="row">
+        <div class="col s12 center">
+
+          <div class="col s9 center">
+            <div class="row center">
+              <h5>Newcastle-under-Lyme College</h5>
+            </div>
+            <div class="row center">
+              <h6>Subjects:</h6>
+              <table class="responsive-table centered">
+                <tr><td>A Level Computing - B</td><td>A Level Mathematics - B</td></tr>
+                <tr><td>A Level Physics - B</td><td>AS Level Further Maths - D</td></tr>
+              </table>
+            </div>
+          </div>
+
+          <div class="col s3 center">
+            <img src="nulc.jpg" class="card-image responsive-img center">
+          </div>
         </div>
       </div>
 
@@ -173,6 +218,36 @@
     </ul>
   </div>
 
+  <!-- Modals -->
+  <div id="ThgModal" class="modal">
+    <div class="modal-content">
+      <h4 class="center">The Hut Group</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+    </div>
+  </div>
+
+  <div id="TbaModal" class="modal">
+    <div class="modal-content">
+      <h4 class="center">TBA Leicester</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+    </div>
+  </div>
+
+  <div id="AsdaModal" class="modal">
+    <div class="modal-content">
+      <h4 class="center">ASDA</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+    </div>
+  </div>
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
@@ -182,9 +257,23 @@
       $(document).ready(function(){
           $('.fixed-action-btn').floatingActionButton();
           $('.tooltipped').tooltip();
+          $('.modal').modal();
       });
 
-
+      jQuery(document).ready(function($) {
+          // Scroll to the desired section on click
+          // Make sure to add the `data-scroll` attribute to your `<a>`          tag.
+          // Example:
+          // `<a data-scroll href="#my-section">My Section</a>` will scroll to an element with the id of 'my-section'.
+          function scrollToSection(event) {
+              event.preventDefault();
+              var $section = $($(this).attr('href'));
+              $('html, body').animate({
+                  scrollTop: $section.offset().top
+              }, 500);
+          }
+          $('[data-scroll]').on('click', scrollToSection);
+      }(jQuery));
   </script>
 
   </body>
